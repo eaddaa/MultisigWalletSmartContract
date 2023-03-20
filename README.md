@@ -1,5 +1,5 @@
 # Solidity code for the MultiSigWallet contract:
-
+```
 pragma solidity ^0.8.0;
 
 contract MultiSigWallet {
@@ -63,9 +63,10 @@ contract MultiSigWallet {
         return ecrecover(_hash, v, r, s);
     }
 }
+```
 
 # Solidity code for the MultiSigWalletFactory contract:
-
+```
 pragma solidity ^0.8.0;
 
 import "./MultiSigWallet.sol";
@@ -94,3 +95,4 @@ function deployMultiSigWithCreate2(address[] memory _owners, uint256 _required, 
 }
 
 }
+```
